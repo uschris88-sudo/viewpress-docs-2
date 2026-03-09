@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gradient-to-r from-purple-400 to-pink-600;
+}
+
+/* Style the site title in the header to be green and clickable */
+.navbar .site-name {
+  @apply text-green-600 hover:text-green-700 font-bold text-xl;
+}
+
+.navbar .site-name a {
+  @apply text-green-600 hover:text-green-700;
+}
+
