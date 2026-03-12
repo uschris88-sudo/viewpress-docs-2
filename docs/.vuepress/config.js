@@ -8,7 +8,8 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "Our Guide for Whimsical Chocolate!", link: "/guide/" },
-      { text: "Our Next Chocolate is....", link: "/chocolate/" }
+      { text: "Our Next Chocolate is....", link: "/chocolate/" },
+      { text: "Help Center", link: "/help-center/" }
     ],
     sidebar: [
       {
@@ -27,6 +28,23 @@ module.exports = {
           "/chocolate/",
           "/chocolate/flavors",
           "/chocolate/inventory"
+        ]
+      },
+      {
+        title: "Help Center",
+        collapsable: false,
+        children: [
+          "/help-center/",
+          {
+            title: "Top 4 Features",
+            collapsable: false,
+            children: [
+              "/help-center/order-management/",
+              "/help-center/subscription-billing/",
+              "/help-center/inventory-tracking/",
+              "/help-center/analytics-reporting/"
+            ]
+          }
         ]
       }
     ]
